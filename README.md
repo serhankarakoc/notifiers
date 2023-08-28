@@ -1,6 +1,7 @@
 # notifiers
 Golang Notifiers Paketi
 # Kullanım
+```
  package main 
  import "notifiers" 
  func main() {
@@ -14,3 +15,5 @@ Golang Notifiers Paketi
 	service.Send("email", emailContent)
 	service.Send("notification", notificationContent)
   }
+}
+```
