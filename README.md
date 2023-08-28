@@ -1,6 +1,8 @@
 # notifiers
 Golang Notifiers Paketi
 # Kullanım
+	import "notifiers"
+ 
 	service := NotificationService{}
 
 	smsContent := map[string]string{"phone": "123456789", "content": "This is an SMS"}
