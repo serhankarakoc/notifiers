@@ -1,8 +1,8 @@
 # notifiers
 Golang Notifiers Paketi
 # Kullanım
-package main 
-import "notifiers" 
+ package main 
+ import "notifiers" 
  func main() {
 	service := notifiers.NotificationService{}
 
@@ -13,4 +13,4 @@ import "notifiers"
 	service.Send("sms", smsContent)
 	service.Send("email", emailContent)
 	service.Send("notification", notificationContent)
-}
+  }
