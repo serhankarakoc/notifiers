@@ -1,9 +1,10 @@
 # notifiers
 Golang Notifiers Paketi
 # Kullanım
-	import "notifiers"
- 
-	service := NotificationService{}
+package main 
+import "notifiers" 
+ func main() {
+	service := notifiers.NotificationService{}
 
 	smsContent := map[string]string{"phone": "123456789", "content": "This is an SMS"}
 	emailContent := map[string]string{"email": "example@example.com", "title": "Email Title", "content": "This is an email"}
@@ -12,3 +13,4 @@ Golang Notifiers Paketi
 	service.Send("sms", smsContent)
 	service.Send("email", emailContent)
 	service.Send("notification", notificationContent)
+}
