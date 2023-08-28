@@ -7,7 +7,6 @@ package main
 import "notifiers"
 
 func main() {
-	server.Server()
 	service := notifiers.NotificationService{}
 
 	smsContent := map[string]string{"phone": "123456789", "content": "This is an SMS"}
